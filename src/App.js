@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import TinderCards from "./components/TinderCards";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -14,8 +15,13 @@ function App() {
           <Route path="/chat">
             <h1>Chat page here</h1>
           </Route>
+
           {/**default page, should always be at the buttom of the pages routed */}
-          <Route path="/">{/**Tinder Card */}</Route>
+
+          <Route path="/">
+            {/**Tinder Card */}
+            <TinderCards />
+          </Route>
         </Switch>
 
         {/**Footer Icon buttons */}
