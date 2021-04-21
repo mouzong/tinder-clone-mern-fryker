@@ -7,20 +7,19 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="app">
-      {/**Header */}
-      <Header />
-
       <Router>
         <Switch>
           {/**Individual chat screen */}
           {/**chat screen */}
           <Route path="/chat">
+            <Header backButton="/" />
             <h1>Chat page here</h1>
           </Route>
 
           {/**default page, should always be at the buttom of the pages routed */}
 
           <Route path="/">
+            <Header />
             {/**Tinder Card */}
             <TinderCards />
             <SwipeButtons />
