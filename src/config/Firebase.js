@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCwK3qfq4tTDObGu7e4Sjk8kJIjqzAwvSI",
   authDomain: "tinder-clone-fryker-4d8be.firebaseapp.com",
@@ -8,4 +10,8 @@ const firebaseConfig = {
   measurementId: "G-VZ0013JKML",
 };
 
-export default firebaseConfig;
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const database = firebaseApp.firestore();
+
+export default database;
