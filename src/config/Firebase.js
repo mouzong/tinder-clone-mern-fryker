@@ -13,5 +13,8 @@ const firebaseConfig = {
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const database = firebaseApp.firestore();
+{
+  /**use a config file from your personal firebase repo */
+}
 
 export default database;
